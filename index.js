@@ -56,6 +56,9 @@ client.on('message', message =>{
         if(command === 'rolereckoning'){ 
         client.commands.get('rolereckoning').execute(message, args);
     }
+        if(command === 'disconnect'){ 
+        client.commands.get('disconnect').execute(message, args);
+    }
 
 
 

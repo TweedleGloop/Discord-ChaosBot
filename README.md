@@ -5,7 +5,7 @@ Usage Instructions
 
 Step 1: Install Discord.JS to the directory where you downloaded this to
 
-Step 2: Make a token.js file like this 
+Step 2: Make a token.json file like this 
 
 {
 "token":"YOUR TOKEN HERE"

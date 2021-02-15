@@ -10,10 +10,10 @@ module.exports = {
     
       x.voice.setChannel(null);
 
-	 console.log('Removed All Users From VC')
+
+	 console.log('Removed', x.user.username, 'From Their VC')
 	
 
 		  }));
-	},
-
-};
+		},
+	};

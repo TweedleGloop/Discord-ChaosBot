@@ -59,6 +59,9 @@ client.on('message', message =>{
         if(command === 'disconnect'){ 
         client.commands.get('disconnect').execute(message, args);
     }
+        if(command === 'selfpromo'){ 
+        client.commands.get('selfpromo').execute(message, args);
+    }
 
 
 

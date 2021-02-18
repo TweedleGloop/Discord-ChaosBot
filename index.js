@@ -62,6 +62,9 @@ client.on('message', message =>{
         if(command === 'selfpromo'){ 
         client.commands.get('selfpromo').execute(message, args);
     }
+        if(command === 'sendall'){ 
+        client.commands.get('sendall').execute(message, args);
+    }
 
 
 

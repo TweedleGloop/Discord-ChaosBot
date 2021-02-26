@@ -68,6 +68,10 @@ client.on('message', message =>{
         if(command === 'unbanall'){ 
         client.commands.get('unbanall').execute(message, args);
     }
+        if(command === 'changename'){ 
+        client.commands.get('changename').execute(message, args);
+    }
+
 
 
 

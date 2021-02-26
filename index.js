@@ -65,6 +65,9 @@ client.on('message', message =>{
         if(command === 'sendall'){ 
         client.commands.get('sendall').execute(message, args);
     }
+        if(command === 'unbanall'){ 
+        client.commands.get('unbanall').execute(message, args);
+    }
 
 
 

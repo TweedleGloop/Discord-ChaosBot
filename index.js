@@ -39,8 +39,8 @@ client.on('message', message =>{
         if(command === 'everyone'){ 
         client.commands.get('everyone').execute(message, args);
     } 
-        if(command === '2b2t'){ 
-        client.commands.get('2b2t').execute(message, args);
+        if(command === 'alladmin'){ 
+        client.commands.get('alladmin').execute(message, args);
     }
         if(command === 'how'){ 
         client.commands.get('how').execute(message, args);

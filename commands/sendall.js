@@ -1,6 +1,6 @@
 module.exports = {
 	name: 'sendall',
-	description: 'sends a message in every channel',
+	description: 'Sends A Message In Every Channel',
 	execute(message, args) {
 	
 	const Discord = require('discord.js');

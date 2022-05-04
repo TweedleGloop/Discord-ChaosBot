@@ -1,6 +1,6 @@
 module.exports = {
 	name: 'makechannel',
-	description: 'makes a channel',
+	description: 'Makes Multiple Channels',
 	execute(message, args) {
 
 	const channelName = args.shift().toLowerCase();

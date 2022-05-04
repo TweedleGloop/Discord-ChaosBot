@@ -14,7 +14,10 @@ Step 2: Make a token.json file like this
 Step 3: Run botStart.bat and the bot should be up and running 
 
 
-WARNING: USING !HOW TOO MUCH WITH TOO MANY CHANNELS CAN EASILY GET YOU RATE LIMITED SO YOU WON'T BE ABLE TO USE DISCORD FOR AN HOUR. 
+To change the Status, Command Prefix or Video thats linked when you click on watch just edit them in config.json
+
+
+WARNING: USING ANY COMMAND THAT SENDS A LOT OF MESSAGES TOO MUCH IN TOO MANY CHANNELS CAN EASILY GET YOU RATE LIMITED.
  
 
 Also just please don't use this bot in a malicous way. I just made it to test what I can do so please dont harass or damage anyones server in any way.

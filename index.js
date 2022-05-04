@@ -1,11 +1,9 @@
 ﻿ // JavaScript source code
  const Discord = require('discord.js');
- const { prefix, streamingvideo } = require('./config.json');
+ const fs = require('fs');
+ const { prefix, streamingvideo, status } = require('./config.json');
  const { token } = require('./token.json');
  const client = new Discord.Client();
-
-
-const fs = require('fs');
  
 client.commands = new Discord.Collection();
  
@@ -20,7 +18,7 @@ for(const file of commandFiles){
  
 client.once('ready', () => {
     console.log('Bot Online');
-    client.user.setActivity("Causing Chaos", {
+    client.user.setActivity(status, {
     type: "STREAMING",
     url: (streamingvideo)
         });
@@ -72,9 +70,6 @@ client.on('message', message =>{
         client.commands.get('changename').execute(message, args);
     }
 
-
-
-
-});
+    });
 
 client.login(token);

@@ -5,12 +5,12 @@ module.exports = {
 
 	const channelName = args.shift().toLowerCase();
 	const channelNumber = args.shift().toLowerCase();
-	
+
 	for (let step = 0; step < channelNumber; step++) {
 		message.guild.channels.create( channelName ,'text')
 		}
-
-	console.log ('made', channelNumber, 'channel(s) called', channelName)
+		
+		console.log ('Made', channelNumber, 'channel(s) called', channelName)
 
 	},
 };

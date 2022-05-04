@@ -1,4 +1,4 @@
-# chaos-bot
+# Discord-ChaosBot
 A discord bot made to cause chaos. Full of messy and bad code because I don't know what I'm doing.
 
 Usage Instructions

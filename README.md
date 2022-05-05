@@ -22,7 +22,7 @@ To change the Status, Command Prefix or Video thats linked when you click on wat
 
 WARNING: USING ANY COMMAND THAT SENDS A LOT OF MESSAGES TOO MUCH IN TOO MANY CHANNELS CAN EASILY GET YOU RATE LIMITED.
  
-To use the banlist put someones ID in the quotes in config.json. If you want only you to be able to use the bot put your id in it and in index.js where it says `if(message.author id === x) ` on line 32 replace === with !==. To add more ids than 2 to the banlist just add another , after the 2nd id in config.json and put another id in quotes
+To use the banlist put someones ID in the quotes in config.json. If you want only you to be able to use the bot put your id in it and in index.js where it says `if(message.author id === x) ` on line 32 replace === with !==. To add more than 2 id's to the banlist just add `,""` after the 2nd id in config.json and put the id in the quotation marks
 
 Please don't use this bot in a malicous way. I just made it to test what I can do so please dont harass or damage anyones server in any way.
 

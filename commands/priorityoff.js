@@ -3,13 +3,15 @@ module.exports = {
 	description: 'Toggles Off Priority',
 	execute(message, args) {
 
-        if(globalThis.priority == message.author.id)
+        if(globalThis.priority == message.author.id){
         pri = 0
 		priority = 0
         console.log(`Turned Off Priority For ${message.author.username}`)
+		return;}
         
-		/*if (globalThis.priority !== message.author.id)
-        console.log(`${message.author.username} Tried To Disable Priority`)*/
+		if (globalThis.priority !== message.author.id){
+        console.log(`${message.author.username} Tried To Disable Priority`)
+		return;}
 
 	},
 };

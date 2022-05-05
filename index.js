@@ -4,7 +4,8 @@
  const { prefix, streamingvideo, status, banned} = require('./config.json');
  const { token } = require('./token.json');
  const client = new Discord.Client();
-var pri = 0
+pri = 0
+priority = 0
 
 client.commands = new Discord.Collection();
 
@@ -92,11 +93,6 @@ client.on('message', message =>{
     if(command === 'priorityoff')
     { 
         client.commands.get('priorityoff').execute(message, args);
-    }
-
-    if(command === 'test'){
-        console.log(globalThis.pri) 
-        console.log(globalThis.priority)
     }
 
 });

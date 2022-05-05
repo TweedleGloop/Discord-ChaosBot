@@ -27,3 +27,9 @@ To use the banlist put someones ID in the quotes in config.json. If you want onl
 Please don't use this bot in a malicous way. I just made it to test what I can do so please dont harass or damage anyones server in any way.
 
 If you need any help just contact me on discord @TweedleGloop#7902
+
+TODO: 
+- Update to new discord.js
+- Add images to the readme to make it easier to follow
+- Comment the code (If I'm not lazy)
+- Make a standalone exe version so the bots easier to use

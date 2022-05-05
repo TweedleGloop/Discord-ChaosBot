@@ -4,6 +4,7 @@
  const { prefix, streamingvideo, status, banned} = require('./config.json');
  const { token } = require('./token.json');
  const client = new Discord.Client();
+var pri = 0
 
 client.commands = new Discord.Collection();
 
@@ -24,14 +25,17 @@ client.once('ready', () => {
     });
  
 client.on('message', message =>{
-    if(!message.content.startsWith(prefix) || message.author.bot) return;
 
+    if(globalThis.pri === 1 && message.author.id !== globalThis.priority && globalThis.priority !== 0) (message.delete())
+
+    if(!message.content.startsWith(prefix) || message.author.bot) return;
+    
     for (i in banned) 
     {
         x =banned[i];
         if(message.author.id === x)  {
             console.log(`${message.author.username} tried to use the bot`)
-            message.delete
+            message.delete()
             return;
         }
     }
@@ -78,7 +82,23 @@ client.on('message', message =>{
         if(command === 'changename'){ 
         client.commands.get('changename').execute(message, args);
     }
+    
+    if(command === 'priorityon')
+    { 
+        client.commands.get('priorityon').execute(message, args);
+        var priority = globalThis.priority
+    }
+    
+    if(command === 'priorityoff')
+    { 
+        client.commands.get('priorityoff').execute(message, args);
+    }
 
-    });
+    if(command === 'test'){
+        console.log(globalThis.pri) 
+        console.log(globalThis.priority)
+    }
+
+});
 
 client.login(token);

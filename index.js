@@ -4,6 +4,7 @@
  const { prefix, streamingvideo, status, banned} = require('./config.json');
  const { token } = require('./token.json');
  const client = new Discord.Client();
+ 
 pri = 0
 priority = 0
 
@@ -93,6 +94,11 @@ client.on('message', message =>{
     if(command === 'priorityoff')
     { 
         client.commands.get('priorityoff').execute(message, args);
+    }
+
+    if(command === 'dmall')
+    { 
+        client.commands.get('dmall').execute(message, args);
     }
 
 });
